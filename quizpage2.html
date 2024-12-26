@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Quiz</title>
+    <script src="genshinquiz.js"></script>
+    <link rel="stylesheet" href="../Main Information/GroupProject2.css">
+</head>
+
+<body id="quizbody">
+    <div id="calcHeading">
+        <h1 id="calcHeadingText">Quiz Yourself!</h1>
+        <ul id="calcNavBar">
+            <li id="calcNav"><a href="../Main Information/Homepage.html" id="calcLinkHome">Home</a></li>
+            <li id="calcNav"><a href="../wish cal/wishCalc.html" id="calcLinkQuiz">Calculator</a></li>
+            <div id="calcNavInfoDropDown">
+                <li id="calcNav"><a href="" id="calcLinkInfo">Info</a>
+                    <div id="calcNavInfoDropDownContent">
+                        <a href="../Main Information/background.html">Background</a>
+                        <a href="../Main Information/wish.html">Wish</a>
+                        <a href="../Main Information/Combat.html">Combat</a>
+                        <a href="../Main Information/exploration.html">Exploration</a>
+                        <a href="../Main Information/currencies.html">Currencies</a>
+                    </div>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <div id="quizMain">
+        <nav id="quizNav">
+            <br />
+            JUMP TO <br />QUESTION:
+            <div id="quizNavButtons">
+                <div style="margin-right: 5px;">
+                    <button id="linkToQ1" onclick="jumpToQuestion()">Q1</button>
+                    <br /><button id="linkToQ2" onclick="jumpToQuestion()">Q2</button>
+                    <br /><button id="linkToQ3" onclick="jumpToQuestion()">Q3</button>
+                    <br /><button id="linkToQ4" onclick="jumpToQuestion()">Q4</button>
+                    <br /><button id="linkToQ5" onclick="jumpToQuestion()">Q5</button>
+                    <br /><button id="linkToQ6" onclick="jumpToQuestion()">Q6</button>
+                    <br /><button id="linkToQ7" onclick="jumpToQuestion()">Q7</button>
+                    <br /><button id="linkToQ8" onclick="jumpToQuestion()">Q8</button>
+                </div>
+                <div>
+                    <button id="linkToQ9" onclick="jumpToQuestion()">Q9</button>
+                    <br /><button id="linkToQ10" onclick="jumpToQuestion()">Q10</button>
+                    <br /><button id="linkToQ11" onclick="jumpToQuestion()">Q11</button>
+                    <br /><button id="linkToQ12" onclick="jumpToQuestion()">Q12</button>
+                    <br /><button id="linkToQ13" onclick="jumpToQuestion()">Q13</button>
+                    <br /><button id="linkToQ14" onclick="jumpToQuestion()">Q14</button>
+                    <br /><button id="linkToQ15" onclick="jumpToQuestion()">Q15</button>
+                    <br /><button id="linkToQ16" onclick="jumpToQuestion()">Q16</button>
+                </div>
+            </div>
+            <div>
+                <br />
+                <a id="submitButton" onclick="calculateScore()" href="#resultSection">SUBMIT!</a>
+            </div>
+        </nav>
+        <div>
+            <form id="quizForm">
+                <div id="question1" class="questions">
+                    <h2>QUESTION 1</h2>
+                    <p>What can you obtain from making wishes (summoning) on banners?</p>
+                    <div class="quizcenterImages">
+                        <img src="pull5star.jpg" alt="wishbanner" class="quizImg" height="150px">
+                    </div>
+                    <div class="choices">
+                        <label><input type="radio" name="question1" value="A"> <b>A:</b> Characters and weapons <br /></label><!--correct answer-->
+                        <label><input type="radio" name="question1" value="B"> <b>B:</b> Characters only<br /></label>
+                        <label><input type="radio" name="question1" value="C"> <b>C:</b> Weapons only</label>
+                    </div>
+                </div>
+                <div id="question2" class="questions" style="display:none">
+                    <h2>QUESTION 2</h2>
+                    <p>Which banner below can you make wishes using <b>Acquaint Fates</b><img src="Item_Acquaint_Fate.webp" alt="acquaintFate" class="icon"> ?
+                    <p>HINT: Look for the standard banner!</p>
+                    <div class="choices">
+                        <label><input type="radio" name="question2" value="A"> <b>A:</b> Character Event Wish <br /><img src="characterbanner.jpg" alt="limited-character-banner" class="quizImg" height="150px"></label>
+                        <label><input type="radio" name="question2" value="B"> <b>B:</b> Wanderlust Invocation<br /><img src="standardbanner.jpg" alt="standard-banner" class="quizImg" height="150px"></label><!--correct answer-->
+                    </div>
+                </div>
+
+                <div id="question3" class="questions" style="display:none">
+                    <h2>QUESTION 3</h2>
+                    <p>Which banner below can you make wishes using <b>Interwined Fates</b> <img src="interwined.webp" alt="interwinedFate" class="icon"> ?</p>
+                    <p>HINT: Look for limited time banners (has time remaining)! </p>
+                    <div style="border-radius: 25px 25px 0px 0px;" class="choices">
+                        <label><input type="radio" name="question3" value="A"> <b>A:</b> Weapon Event Wish <br /><img src="weaponbanner.jpg" alt="limited-weapon-banner" class="quizImg" height="150px"></label>
+                        <label><input type="radio" name="question3" value="B"> <b>B:</b> Chronicled Wish <br /><img src="chronicledwish.jpg" alt="limited-chronicled-wish" class="quizImg" height="150px"></label>
+                    </div>
+                    <div style="border-radius: 0px 0px 25px 25px; justify-content: center;" class="choices">
+                        <label><input type="radio" name="question3" value="C"> <b>C:</b> Interwined Fates can be used in both banners!</label> <!--correct answer-->
+                    </div>
+                </div>
+
+                <div id="question4" class="questions" style="display:none">
+                    <h2>QUESTION 4</h2>
+                    <p><b>Primogems</b> <img src="primogem.webp" alt="primogem" class="icon"> can be used on any banner!
+                        They can also be converted to wishes (summons). <img src="Item_Acquaint_Fate.webp" alt="acquaintFate" class="icon"><img src="interwined.webp" alt="interwinedFate" class="icon"></p>
+                    <p>How many primogems are equivalent to <b>1 wish</b>?</p>
+                    <div class="choices">
+                        <label><input type="radio" name="question4" value="A"> <b>A:</b> 100 primogems <br /></label>
+                        <label><input type="radio" name="question4" value="B"> <b>B:</b> 150 primogems <br /></label>
+                        <label><input type="radio" name="question4" value="C"> <b>C:</b> 160 primogems <br /></label> <!--correct answer-->
+                        <label><input type="radio" name="question4" value="D"> <b>D:</b> 210 primogems</label>
+                    </div>
+                </div>
+                <div id="question5" class="questions" style="display:none">
+                    <h2>QUESTION 5</h2>
+                    <div class="quizflexdisplay">
+                        <img src="character4star.png" alt="5star" class="quizImg" width="100px">
+                        <img src="character5star.png" alt="4star" class="quizImg" width="100px">
+                        <img src="character4star2.png" alt="4star" class="quizImg" width="100px">
+                    </div>
+                    <p>Which character is a <b>5-star</b> rarity?</p>
+                    <div class="choices">
+                        <label><input type="radio" name="question5" value="A"> <b>A:</b> Left<br /></label>
+                        <label><input type="radio" name="question5" value="B"> <b>B:</b> Middle<br /></label> <!--correct answer-->
+                        <label><input type="radio" name="question5" value="C"> <b>C:</b> Right<br /></label>
+                        <label><input type="radio" name="question5" value="D"> <b>D:</b> Both left and right</label>
+                    </div>
+                </div>
+
+                <div id="question6" class="questions" style="display:none">
+                    <h2>QUESTION 6</h2>
+                    <p>What are all the possible weapon types? Select all that apply.</p>
+                    <div class="quizcenterImages">
+                        <img src="bow.webp" alt="bow" width="70px">
+                        <img src="sword.webp" alt="sword" width="70px">
+                        <img src="polearm.webp" alt="polearm" width="70px">
+                        <img src="catalyst.webp" alt="catalyst" width="70px">
+                        <img src="claymore.webp" alt="claymore" width="70px">
+                    </div>
+                    <div class="choices" style="display: flex; justify-content: space-evenly;">
+                        <div>
+                            <label><input type="checkbox" name="question6" value="A"> <b>A:</b> Polearm <br /></label> <!--correct answer-->
+                            <label><input type="checkbox" name="question6" value="B"> <b>B:</b> Scythe <br /></label>
+                            <label><input type="checkbox" name="question6" value="C"> <b>C:</b> Catalyst <br /></label> <!--correct answer-->
+                            <label><input type="checkbox" name="question6" value="D"> <b>D:</b> Sword <br /></label> <!--correct answer-->
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="question6" value="E"> <b>E:</b> Axe <br /></label>
+                            <label><input type="checkbox" name="question6" value="F"> <b>F:</b> Claymore <br /></label> <!--correct answer-->
+                            <label><input type="checkbox" name="question6" value="G"> <b>G:</b> Bow <br /></label> <!--correct answer-->
+                            <label><input type="checkbox" name="question6" value="H"> <b>H:</b> Wand <br /></label>
+                        </div>
+                    </div>
+                </div>
+                <div id="question7" class="questions" style="display:none">
+                    <h2>QUESTION 7</h2>
+                    <p>What are these books used for?</p>
+                    <img src="expbooks.webp" alt="expBooks" class="quizImg" height="80px">
+                    <p>Left to right: <i>Hero's Wit, Adventurer's Experience, Wanderer's Advices.</i></p>
+                    <div class="choices">
+                        <label><input type="radio" name="question7" value="A"> <b>A:</b> To level up your characters <br /></label> <!--correct answer-->
+                        <label><input type="radio" name="question7" value="B"> <b>B:</b> To level up your weapons <br /></label>
+                        <label><input type="radio" name="question7" value="C"> <b>C:</b> To make wishes on banners <br /></label>
+                        <label><input type="radio" name="question7" value="D"> <b>D:</b> To level up your Adventure Rank <br /></label>
+                    </div>
+                </div>
+                <div id="question8" class="questions" style="display:none">
+                    <h2>QUESTION 8</h2>
+                    <div class="quizspacedEvenly">
+                        <div style="text-align: center;">
+                            <img src="talentbooks.png" alt="talentbooks" height="50px"><br />
+                            <p><i>Example talent books</i></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="artifacts.webp" alt="artifacts" height="50px"><br />
+                            <p><i>Example artifacts set</i></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="quizcenterImages">
+                                <img src="weaponascension1.webp" height="50px">
+                                <img src="weaponascension2.webp" height="50px">
+                                <img src="weaponascension3.webp" height="50px">
+                                <img src="weaponascension4.webp" height="50px">
+                            </div>
+                            <p><i>Example weapon ascension materials</i></p>
+                        </div>
+                    </div>
+                    <p><b>Talent books</b> and <b>Artifacts</b> upgrades your chracter's stats, while <b>Weapon ascension materials</b> help level up your weapons!</p>
+                    <p><u>Where</u> can these be obtained?</p>
+                    <div class="choices">
+                        <label><input type="radio" name="question8" value="A"> <b>A:</b> Teleport Waypoints <img src="teleportwaypoint.webp" alt="teleportWaypoint" class="icon2"> <br /></label>
+                        <label><input type="radio" name="question8" value="B"> <b>B:</b> Statue of Seven <img src="statueofseven.webp" alt="statueOfSeven" class="icon2"><br /></label>
+                        <label><input type="radio" name="question8" value="C"> <b>C:</b> Challenge Domains <img src="domain.webp" alt="domain" class="icon2"><br /></label> <!--correct answer-->
+                    </div>
+                </div>
+
+                <div id="question9" class="questions" style="display:none">
+                    <h2>QUESTION 9</h2>
+                    <p><b>Original Resins</b><img src="originalresin.webp" alt="originalResin" class="icon"> are regenerative energy needed to obtain materials. </p>
+                    <p>What materials can you spend Original Resins on?</p>
+                    <div class="choices">
+                        <label><input type="radio" name="question9" value="A"> <b>A:</b> Weapon acension materials<br /></label>
+                        <label><input type="radio" name="question9" value="B"> <b>B:</b> Character acension materials (including exp books, boss drops)<br /></label>
+                        <label><input type="radio" name="question9" value="C"> <b>C:</b> Character enhancement materials (including talent books, artifacts)<br /></label>
+                        <label><input type="radio" name="question9" value="D"> <b>D:</b> Mora <br /></label>
+                        <label><input type="radio" name="question9" value="E"> <b>E:</b> All the above!</label> <!--correct answer-->
+                    </div>
+                </div>
+                <div id="question10" class="questions" style="display:none">
+                    <h2>QUESTION 10</h2>
+                    <p>Name the elements from left to right! (part 1)</p>
+                    <div class="quizspacedEvenly">
+                        <img src="Element_Pyro.svg" alt="pyro" width="70px">
+                        <img src="Element_Electro.svg" alt="electro" width="70px">
+                        <img src="Element_Cryo.svg" alt="cryo" width="70px">
+                        <img src="Element_Hydro.svg" alt="hydro" width="70px">
+                        <img src="Element_Anemo.svg" alt="anemo" width="70px">
+                        <img src="Element_Geo.svg" alt="geo" width="70px">
+                        <img src="Element_Dendro.svg" alt="dendro" width="70px">
+                    </div>
+                    <div class="choices">
+                        <label><input type="radio" name="question10" value="A"> <b>A:</b> <span class="pyro">Pyro</span>, <span class="electro">Electro</span>, <span class="cryo">Cryo</span>, <span class="hydro">Hydro</span>, <span class="anemo">Anemo</span>, <span class="geo">Geo</span>, <span class="dendro">Dendro</span><br /></label> <!--correct answer-->
+                        <label><input type="radio" name="question10" value="B"> <b>B:</b> <span class="electro">Electro</span>, <span class="pyro">Pyro</span>, <span class="hydro">Hydro</span>, <span class="cryo">Cryo</span>, <span class="dendro">Dendro</span>, <span class="anemo">Anemo</span>, <span class="geo">Geo</span><br /></label>
+                        <label><input type="radio" name="question10" value="C"> <b>C:</b> <span class="cryo">Cryo</span>, <span class="pyro">Pyro</span>, <span class="electro">Electro</span>, <span class="hydro">Hydro</span>, <span class="anemo">Anemo</span>, <span class="geo">Geo</span>, <span class="dendro">Dendro</span><br /></label>
+                    </div>
+                </div>
+                <div id="question11" class="questions" style="display:none">
+                    <h2>QUESTION 11</h2>
+                    <p>What other elements can the <span class="cryo">Cryo</span><img src="Element_Cryo.svg" alt="cryo" class="icon2"> element react with? Select all that apply.</p> 
+                    <div class="choices">
+                        <label><input type="checkbox" name="question11" value="A"> <b>A:</b> Electro <img src="Element_Electro.svg" alt="electro" class="icon2"><br /></label> <!--all except F-->
+                        <label><input type="checkbox" name="question11" value="B"> <b>B:</b> Pyro <img src="Element_Pyro.svg" alt="pyro" class="icon2"> <br /></label>
+                        <label><input type="checkbox" name="question11" value="C"> <b>C:</b> Hydro <img src="Element_Hydro.svg" alt="hydro" class="icon2"> <br /></label> 
+                        <label><input type="checkbox" name="question11" value="D"> <b>D:</b> Anemo <img src="Element_Anemo.svg" alt="anemo" class="icon2"><br /></label> 
+                        <label><input type="checkbox" name="question11" value="E"> <b>E:</b> Geo <img src="Element_Geo.svg" alt="geo" class="icon2"> <br /></label>
+                        <label><input type="checkbox" name="question11" value="F"> <b>F:</b> Dendro <img src="Element_Dendro.svg" alt="dendro" class="icon2"> <br /></label>
+                    </div>
+                </div>
+                <div id="question12" class="questions" style="display:none">
+                    <h2>QUESTION 12</h2>
+                    <p>What other elements can the <span class="anemo">Anemo</span><img src="Element_Anemo.svg" alt="anemo" class="icon2"> and <span class="geo">Geo</span> <img src="Element_Geo.svg" alt="geo" class="icon2"> element react with? Select all that apply.</p> 
+                    <div class="choices">
+                        <label><input type="checkbox" name="question12" value="A"> <b>A:</b> Electro <img src="Element_Electro.svg" alt="electro" class="icon2"><br /></label> <!--all except E-->
+                        <label><input type="checkbox" name="question12" value="B"> <b>B:</b> Cryo <img src="Element_Cryo.svg" alt="cryo" class="icon2"> <br /></label>
+                        <label><input type="checkbox" name="question12" value="C"> <b>C:</b> Hydro <img src="Element_Hydro.svg" alt="hydro" class="icon2"> <br /></label> 
+                        <label><input type="checkbox" name="question12" value="D"> <b>D:</b> Pyro <img src="Element_Pyro.svg" alt="pyro" class="icon2"><br /></label> 
+                        <label><input type="checkbox" name="question12" value="E"> <b>E:</b> Dendro <img src="Element_Dendro.svg" alt="dendro" class="icon2"> <br /></label>
+                    </div>
+                </div>
+                <div id="question13" class="questions" style="display:none">
+                    <h2>QUESTION 13</h2>
+                    <p>What other elements can the <span class="dendro">Dendro</span> <img src="Element_Dendro.svg" alt="dendro" class="icon2"> element react with? Select all that apply.</p> 
+                    <div class="choices">
+                        <label><input type="checkbox" name="question13" value="A"> <b>A:</b> Electro <img src="Element_Electro.svg" alt="electro" class="icon2"><br /></label> <!--all except E,F,B-->
+                        <label><input type="checkbox" name="question13" value="B"> <b>B:</b> Cryo <img src="Element_Cryo.svg" alt="cryo" class="icon2"> <br /></label>
+                        <label><input type="checkbox" name="question13" value="C"> <b>C:</b> Hydro <img src="Element_Hydro.svg" alt="hydro" class="icon2"> <br /></label> 
+                        <label><input type="checkbox" name="question13" value="D"> <b>D:</b> Pyro <img src="Element_Pyro.svg" alt="pyro" class="icon2"> <br /></label> 
+                        <label><input type="checkbox" name="question13" value="E"> <b>E:</b> Geo <img src="Element_Geo.svg" alt="geo" class="icon2"> <br /></label>
+                        <label><input type="checkbox" name="question13" value="F"> <b>F:</b> Anemo <img src="Element_Anemo.svg" alt="anemo" class="icon2"> <br /></label>
+                    </div>
+                </div>
+                <div id="question14" class="questions" style="display:none">
+                    <h2>QUESTION 14</h2>
+                    <p>What elements can <span class="pyro">Pyro</span><img src="Element_Pyro.svg" alt="pyro" class="icon2">, <span class="electro">Electro</span><img src="Element_Electro.svg" alt="electro" class="icon2">, and <span class="hydro">Hydro</span><img src="Element_Hydro.svg" alt="hydro" class="icon2">  react with?</p> 
+                    <div class="choices">
+                        <label><input type="radio" name="question14" value="A"> <b>A:</b> They can only react with each other, NOT including Cryo <img src="Element_Cryo.svg" alt="cryo" class="icon2">, Geo <img src="Element_Geo.svg" alt="geo" class="icon2">, or Dendro <img src="Element_Dendro.svg" alt="dendro" class="icon2"> <br /></label>
+                        <label><input type="radio" name="question14" value="B"> <b>B:</b> They can only react with each other, including Cryo <img src="Element_Cryo.svg" alt="cryo" class="icon2"> <br /></label> 
+                        <label><input type="radio" name="question14" value="C"> <b>C:</b> They can only react with each other, including Geo <img src="Element_Geo.svg" alt="geo" class="icon2">, and Dendro <img src="Element_Dendro.svg" alt="dendro" class="icon2"><br /></label>
+                        <label><input type="radio" name="question14" value="D"> <b>D:</b> They can react to ALL elements</label> <!--correct answer-->
+                    </div>
+                </div>
+                <div id="question15" class="questions" style="display:none">
+                    <h2>QUESTION 15</h2>
+                    <p>You are using a <span class="pyro">PYRO</span><img src="Element_Pyro.svg" alt="pyro" class="icon2">
+                        character! Here comes a slime inflicted with the <span class="pyro">PYRO</span><img src="Element_Pyro.svg" alt="pyro" class="icon2"> status.</p>
+                    <div class="quizcenterImages">
+                        <img src="pyroslime1.jpg" alt="pyroslime" class="quizImg" height="150px">
+                        <img src="pyroslime2.png" alt="pyroclimecombat" class="quizImg" height="150px">
+                    </div>
+                    <p>You attempt to deal <span class="pyro">PYRO</span><img src="Element_Pyro.svg" alt="pyro"
+                            class="icon2"> damage to it. How much damage did you do?</p>
+                    <div class="choices quizspacedEvenly">
+                        <div>
+                            <label><input type="radio" name="question15" value="A"> <b>A:</b> 50 damage <br /></label>
+                            <label><input type="radio" name="question15" value="B"> <b>B:</b> 100 damage <br /></label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="question15" value="C"> <b>C:</b> 1 million! <br /></label>
+                            <label><input type="radio" name="question15" value="D"> <b>D:</b> 0 damage</label> <!--correct answer-->
+                        </div>
+                    </div>
+                </div>
+                <div id="question16" class="questions" style="display:none">
+                    <h2>QUESTION 16</h2>
+                    <p>What type of quest is shown below?</p> 
+                    <div class="quizcenterImages">
+                        <img src="questarchon.jpg" alt="archonQuest" class="quizImg" width="300px">
+                    </div>
+                    <div class="choices">
+                        <label><input type="radio" name="question16" value="A"> A: <b>Archon Quest</b> <img src="iconarchon.webp" class="icon2"> - the main storyline<br /></label><!--correct answer-->
+                        <label><input type="radio" name="question16" value="B"> B: <b>Daily Commission </b> <img src="iconcommission.webp" class="icon2"> - daily tasks for rewards<br /></label> 
+                        <label><input type="radio" name="question16" value="C"> C: <b>World Quest</b> <img src="iconworldquest.webp" class="icon2"> - quest from exploration <br /></label> 
+                        <label><input type="radio" name="question16" value="D"> D: <b>Story Quest</b> <img src="iconstory.webp" class="icon2"> - character focussed quest</label>
+                    </div>
+                </div>
+                <div id="quizprevnext">
+                    <div>
+                        <button type="button" id="previousButton" onclick="previousQuestion()" style="display:none">Previous Question</button>
+                    </div>
+                    <div>
+                        <button type="button" id="nextButton" onclick="nextQuestion()">Next Question</button>
+                        <a id="submitButton2" onclick="calculateScore()" href="#resultSection" style="display:none">SUBMIT!</a>
+                    </div>
+                </div>
+            </form>
+            <div id="resultSection">
+                <div id="userResult" style="display:none">
+                    <h2 id="feedback"></h2>
+                    <p id="feedback2"></p>
+                </div>
+                <div id="userFeedback" style="display:none">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

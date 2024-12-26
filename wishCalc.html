@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Calculator</title>
+    <link rel="stylesheet" href="../Main Information/GroupProject2.css">
+    <script src="wishCalc.js"></script>
+</head>
+
+<body id="calcBody">
+    <div id="calcHeading">
+        <h1 id="calcHeadingText">Wish Calculator</h1>
+
+        <ul id="calcNavBar">
+            <li id="calcNav"><a href="../Main Information/Homepage.html" id="calcLinkHome">Home</a></li>
+            <li id="calcNav"><a href="../GROUP PROJECT quiz/quizpage2.html" id="calcLinkQuiz">Quiz</a></li>
+            <div id="calcNavInfoDropDown">
+                <li id="calcNav"><a href="" id="calcLinkInfo">Info</a>
+                    <div id="calcNavInfoDropDownContent">
+                        <a href="../Main Information/background.html">Background</a>
+                        <a href="../Main Information/wish.html">Wish</a>
+                        <a href="../Main Information/Combat.html">Combat</a>
+                        <a href="../Main Information/exploration.html">Exploration</a>
+                        <a href="../Main Information/currencies.html">Currencies</a>
+                    </div>
+            </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <table id="calcMainWish">
+            <tr id="calcImages">
+                <td id="calcPrimo">
+                    <img src="Primogem.png" alt="calcPrimoImg" width="100%">
+                </td>
+                <td id="calcFate">
+                    <img src="IntertwinedFate.png" alt="calcIntertwinedFateImg" width="100%">
+                </td>
+                <td id="calcPity">
+                    <img src="Pity.png" alt="pityImg" id="calcPityImg" width="100%">
+                </td>
+            </tr>
+
+            <tr id="calcBoxes">
+                <td>
+                    <input type="number" id="calcPrimoNum" min="0" placeholder="Enter Your Primogem Count" size="50">
+                </td>
+                <td>
+                    <input type="number" id="calcFateNum" min="0" placeholder="Enter Your Fate Amount" size="50">
+                </td>
+                <td>
+                    <input type="number" id="calcPityNum" min="0" placeholder="Enter Your Pity" size="50">
+                </td>
+            </tr>
+            <tr id="calcSubmitButton">
+                <td></td>
+                <td>
+                    <button onclick="getValues()" id="calcSubmit">Submit</button>
+                </td>
+            </tr>
+        </table>
+        <div id="calcResults">
+            <p id="calcCurrentPulls"></p>
+            <p id="calcAnswer"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

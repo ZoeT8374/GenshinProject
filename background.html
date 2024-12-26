@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="./GroupProject2.css">
+</head>
+<body>
+    <header>Background</header>
+    <div id="Sidenav">
+        <ul >
+            <li><a href="Homepage.html">Home>></a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="wish.html">Wish</a></li>
+            <li><a href="Combat.html">Combat</a></li>
+            <li><a href="exploration.html">Exploration</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
+            <li><a href="../wish cal/wishCalc.html">Calculator</a></li>
+            <li><a href="../GROUP PROJECT quiz/quizpage2.html">Quiz yourself!</a></li>
+        </ul>
+    </div>
+    <section id="main">
+        <div class="introvideoandbutton">
+            <button id="videoButton" onclick="pauseVideo()">
+            <video autoplay muted loop id="introVideo" width="1000" height="570">
+                <source src="genshinintrovideocropped.mp4" type="video/mp4">
+            </video>
+            </button>
+          <script>
+            let video = document.getElementById("introVideo");
+            let btn = document.getElementById("videoButton");
+            function pauseVideo() {
+              if (video.paused) {
+                video.play();
+              } else {
+                video.pause();
+              }
+            }
+            </script>
+        </div>
+        <img class="characterText" src="wanderer.png" alt="Character wanderer" width="50%">
+    <div class="textbox">
+        <p>Genshin Impact is an RPG, open-world exploration game developed by MIHOYO where players 
+            take the role of a traveler to the land in the world of Teyvat, follow through quests 
+            and solve puzzles to discover the secrets of the seven nations.
+            <br>
+            The game is action-based, which means characters can be put into a changeable team of 
+            4 simultaneously. Different elements interact with each other to create powers and reactions 
+            in battles against environmental enemies. More details are found in the <a href="Combat.html">Combat</a> section.
+        </p>
+    </div>
+    <h1>
+        Quests
+    </h1>
+    <div class="textbox">
+            <p>Quest is a major part of the game is its intricate main story lines and puzzles including 
+                quests where characteristics of each character are put into spotlights. Types of quests 
+                include:
+            </p>
+                <ul>
+                    <li>
+                        <img src="commissionicon.webp" alt="Commission icons" width="30px">
+                 Daily commissions: Small quests travelers take as commissions to earn rewards that 
+                refreshes daily. It can be region based with various types of commissions ranging 
+                        from finding objects, fighting enemies to running errands for NPCs.
+                    </li>
+                    <li>
+                        <img src="Icon_Archon_Quest.webp" alt="Archon Quest Icon" width="30px">
+                        Archon quests: the major plotline of the game where major characters play different 
+                        roles interacting with the traveler with cutscences animation and dialogues. 
+                    </li>
+                    <li>
+                        <img src="Icon_World_Quest.webp" alt="World Quest Icon" width="30px">
+                        Archon quests: the major plotline of the game where major characters play different 
+                        roles interacting with the traveler with cutscences animation and dialogues. 
+                    </li>
+                    <li>
+                        <img src="System_Story_Quest.webp" alt="Story Quest Icon" width="30px">
+                        Archon quests: the major plotline of the game where major characters play different 
+                        roles interacting with the traveler with cutscences animation and dialogues. 
+                    </li>
+                </ul>
+    </div>
+        
+    </div>
+    </section>
+    <footer>
+        <a href="background.html">Back to top</a>
+    </footer>
+</body>
+</html>

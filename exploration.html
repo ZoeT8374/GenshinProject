@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming</title>
+    <link rel="stylesheet" href="./GroupProject2.css">
+</head>
+<body>
+    <header>
+    Exploration   
+    </header>
+    <div id="Sidenav">
+        <ul >
+            <li><a href="Homepage.html">Home>></a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="wish.html">Wish</a></li>
+            <li><a href="Combat.html">Combat</a></li>
+            <li><a href="exploration.html">Exploration</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
+            <li><a href="../wish cal/wishCalc.html">Calculator</a></li>
+            <li><a href="../GROUP PROJECT quiz/quizpage2.html">Quiz yourself!</a></li>
+        </ul>
+    </div>
+    <section id="main">
+        <h1>Map exploration</h1>
+            <h2>Materials</h2>
+            <div class="textbox">
+                <p class="tip">TIP: Since Genshin is an exploration game, it is important to collect whatever materials
+                    collectible. This will certain become useful at one point. Excess of materials are
+                    never an actual problem in this game.
+                </p>
+                <p>Leylines: Exp books used to <strong>level up characters</strong> can be farm through the blue leylines,
+                     whereas yellow leylines are used to farm mora</p>
+                <img src="materials.jpg" alt="materials" width="30%">
+                <img src="artifacts.jpg" alt="artifacts" width="60%">
+            </div>
+        <div class="textbox">
+            <p>
+                There are many regions inspired by different cultures globally with various topography, 
+                materials and constructions. To travel across the map quickly, travellers can use waypoints, 
+                Statue of the Seven, or domains
+                <ul>
+                    <li>Waypoints: teleport anchors</li>
+                    <li>Statue of the Seven: can also heal your characters to full health.
+                        Oculus can be offered to statues of the resembled regions for rewards.
+                    </li>
+                    <li>Domains: Domains are structures for farming materials from <strong>weapon ascensions,
+                        talent ascensions, artifact sets</strong>. Special domains can also be used for fighting 
+                         weekly bosses for special ascension materials</li>
+                </ul>
+            </p>
+            <p>The icons on the map of Mondstadt below are statues and domains that can be teleported to.</p>
+            <div id="characterSlideshow">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <div class="slidesContent">
+                    <img src="mond.webp" alt="mondstadt" id="firstSlide" width="970px" height="600px">
+                </div>
+                <div class="slidesContent">
+                    <img src="liyue.PNG" alt="liyue" width="970px" height="600px">
+                </div>
+                <div class="slidesContent">
+                    <img src="inazuma.PNG" alt="inazuma" width="970px" height="600px">
+                </div>
+                <div class="slidesContent">
+                    <img src="sumeru.PNG" alt="sumeru" width="970px" height="600px">
+                </div>
+        <script>
+            let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slidesContent");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+        </script>
+        </div>
+            <img src="map monstadt.PNG" alt="map" width="100%">
+        </div>
+        </section>
+        <footer>
+            <a href="exploration.html">Back to top</a>
+        </footer>
+</body>
+</html>

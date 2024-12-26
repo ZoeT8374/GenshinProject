@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat</title>
+    <link rel="stylesheet" href="./GroupProject2.css">
+</head>
+<body>
+    <header>
+       Combat   <img src="Icon_Combat.webp" width="5%">
+    </header>
+    <div id="Sidenav">
+        <ul >
+            <li><a href="Homepage.html">Home>></a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="wish.html">Wish</a></li>
+            <li><a href="Combat.html">Combat</a></li>
+            <li><a href="exploration.html">Exploration</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
+            <li><a href="../wish cal/wishCalc.html">Calculator</a></li>
+            <li><a href="../GROUP PROJECT quiz/quizpage2.html">Quiz yourself!</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Combat</h1>
+        <img class="characterText" src="furina.png" alt="furina" width="70%">
+        <p>Combat is a dynamic and strategic system where players control a team of up to four characters, each with
+            unique abilities
+            and elemental affinities. Players switch between characters to create powerful elemental reactions,
+            exploiting enemy
+            weaknesses. Combat involves normal and charged attacks, elemental skills, and powerful elemental bursts.
+            Mastering dodging
+            and stamina management is crucial for survival. The game also features a variety of enemies, bosses, and
+            dungeons, each
+            requiring different tactics and team compositions. Cooperation and synergy between characters are key to
+            success in Genshin
+            Impact's combat system.</p>
+        <section id="Combat">
+        <div>
+            <h2>Elemental reactions</h2>
+            <p>There are many factors effecting the damage output of a character's attack from the
+                build of artifacts, weapons, buffs consumed and one of a major factor is element.
+                The world of Teyvat in Genshin has 7 elements representing different elements of life: 
+                pyro (fire), hydro (water), geo (earth), cryo (ice), electro (electricity), anemo (wind) 
+                and dendro (nature).
+            </p>
+            <p>Different elements interacting with each other will result in different effects from character
+                losing health, stunning enemies, frozing enemies to increased damage upon enemies. While same elements interacting results in <strong>immune</strong> where no elemental damage are made. The chart below
+                summarizes the basics of each reaction.
+            </p>
+            <img src="elemental reaction.jpeg" alt="Elemental reaction chart" width="100%">
+            <a href="https://www.reddit.com/r/Genshin_Impact/comments/jchioz/updated_all_in_one_elemental_reactions_guide_one/" target="_blank"> Source: PaimonPro</a>
+        </div>
+        <h1>WEAPON TYPES!!!</h1> <!--ADD WEAPON TYPES-->
+        <div>
+            <h2>Character's statistics</h2>
+            <p>Materials are used to level up characters and their talents which overall
+                increases the statistics of a character that enhances their power. The 3 main statistics include:
+            </p>
+            <ul>
+                <li>
+                    Max health (HP): the quantitive health stat when the character is completely healed.
+                </li>
+                <li>
+                    Attack (ATK): offense statistics, determines the damage output
+                </li>
+                <li>
+                    Defense (DEF): defense statistics, determines the character's resistance against enemies' attacks.
+                </li>
+            </ul>
+            <img src="character.jpg" alt="character" width="60%" >
+        </div>
+        </section>
+    
+    <div class="combatweapons">
+
+        <h2 class="weapontype">Weapon types</h2>
+            <p>Click on the icons to find out more about different icon types!</p>
+        <span class="tabs">
+            <button class='tabsbutton' onclick="useTabs(event,  'Catalyst')"><p></p><img class="weapon_button_picture"
+                    src="weapon_Catalyst.webp"></button>
+            <button class='tabsbutton' onclick="useTabs(event,  'Claymore')"><img class="weapon_button_picture"
+                    src="weapon_Claymore.webp"></button>
+            <button class='tabsbutton' onclick="useTabs(event,  'Polearm')"><img class="weapon_button_picture"
+                    src="weapon_Polearm.webp"></button>
+            <button class='tabsbutton' onclick="useTabs(event,  'Sword')"><img class="weapon_button_picture"
+                    src="weapon_Sword.webp"></button>
+            <button class='tabsbutton' onclick="useTabs(event,  'Bow')"><img class="weapon_button_picture"
+                    src="weapon_Bow.webp"></button>
+        </span>
+
+        <span id="Catalyst" class="tab-content">
+            <h3 class="weaponh3">Catalyst</h3>
+            <p class="weapon_p1">
+                Due to their magical nature, all Normal and Charged Attacks performed with a Catalyst are considered
+                elemental damage.
+                The element of the damage depends on the wielder's natural element/vision.
+            </p>
+            <h5>
+                Normal Attacks
+            </h5>
+            <p class="weapon_p">
+                A Catalyst user's Normal Attack chain typically consists of 3–4 single-target or AoE elemental attacks
+                from range.
+                These attacks take varying forms depending on the character, and their maximum ranges vary greatly
+                between characters.
+            </p>
+            <h5 class="weaponh5">
+                Charged Attacks
+            </h5>
+            <p class="weapon_p">Catalyst users' Charged Attacks typically consume 50 stamina to unleash a more powerful
+                AoE attack
+                after a short delay. The default version of attacks of this type spawns at the target's location when
+                locked on.
+
+                <br>Some of the exceptions to this default version are:
+
+                <br>Charged Attack: Sparkling Scatter in which Ningguang fires one large homing projectile that deals
+                damage in a small AoE on hit.
+                Charged Attack: Wind Spirit Creation in which Sucrose conjures a conical blast of wind that hits targets
+                in an AoE in front of her.
+                Charged Attack: Fudou Style Martial Arts where Heizou performs a melee attack in the form of an upward
+                kick at the cost of 25 stamina.
+                Charged Attack: Equitable Judgment where Neuvillette can move and change directions while unleashing
+                surging torrents without consuming stamina.
+            </p>
+            <h5 class="weaponh5">
+                Plunging Attacks
+            </h5>
+            <p class="weapon_p">
+                All Catalyst users have similar animations when plunging, which involves them turning into a glowing
+                elemental ball and
+                reappearing upon striking the ground.
+                <br>Catalyst Plunging Attacks are considered ranged attacks and cannot deal any damage to Geo objects
+                such as Minerals.
+            </p>
+        </span>
+
+        <span id="Claymore" class="tab-content" style="display:none">
+            <h3 class="weaponh3">Claymore</h3>
+            <p class="weapon_p1">
+                Claymores attacks hit slower than melee weapons like Swords and Polearms, but deal much more damage per
+                swing.
+                Due to being considered Blunt Attacks, Claymore attacks deal increased damage to Geo objects, such as
+                monsters'
+                shields.
+            </p>
+            <h5 class="weaponh5">
+                Normal Attacks
+            </h5>
+            <p class="weapon_p">
+                A Claymore user's Normal Attack chain typically consists of 3–5 slow, but powerful and wide, melee
+                attacks.
+            </p>
+            <h5 class="weaponh5">
+                Charged Attacks
+            </h5>
+            <p class="weapon_p">
+                A Claymore user's Charged Attack has a small windup before performing a rapid chain of attack that
+                continuously drains
+                their stamina. This attack will end with a more powerful slash if the attack button is released, if the
+                character runs
+                out of stamina, or if the max duration is reached.
+
+                <br>When initiating a Charged Attack sequence from a standstill, Claymore users will cut short the
+                animation of their
+                first Normal Attack and transition it into the Charged Attack windup animation. However, if the first
+                Normal Attack's
+                Attack Speed is too fast, the character will finish performing the first Normal Attack before starting
+                the Charged
+                Attack windup. For example, Sayu who can normally directly enter a Charged Attack sequence from
+                standstill, when at
+                150% Attack Speed, will have to perform her first Normal Attack before a Charged Attack sequence.
+
+                <br>Two iterations of Claymore Charged Attack exist: a spinning attack for the short and medium-height
+                characters and a
+                continuous slash attack for the tall characters, except for Kaveh and Navia, who use the spinning
+                iteration. However,
+                they are functionally the same. Arataki Itto has access to a non-standard Charged Attack.
+
+                <br>Typically, Claymore Charged Attacks cost 40 Stamina per second and can last up to 5 seconds.
+            </p>
+            <h5 class="weaponh5">
+                Plunging Attacks
+            </h5>
+            <p class="weapon_p">
+                Claymore Plunging Attacks are considered Blunt Attacks. All Claymore users have similar animations when
+                plunging, which
+                involves them performing a slash downward with their sword.
+            </p>
+        </span>
+
+        <span id="Polearm" class="tab-content" style="display:none">
+            <h3 class="weaponh3">Polearm</h3>
+            <p class="weapon_p1">
+                Polearms have fast attacks, long forward reach, and deal moderate damage per hit.
+            </p>
+            <h5 class="weaponh5">
+                Normal Attacks
+            </h5>
+            <p class="weapon_p">
+                A Polearm user's Normal Attack chain typically consists of 4-6 fast melee attacks.
+            </p>
+            <h5 class="weaponh5">
+                Charged Attacks
+            </h5>
+            <p class="weapon_p">
+                Two types of Polearm Charged Attacks exist:
+
+                <br>Lunging forwards, dealing damage to opponents along the way (most Polearm users)
+                <br>Thrusting upwards (Xiao and Raiden Shogun)
+                <br>Xiao's Charged Attack has greater Knockback than Raiden Shogun's.
+                <br>All Polearm Charged Attacks cost 25 Stamina by default.
+
+            </p>
+            <h5 class="weaponh5">
+                Plunging Attacks
+            </h5>
+            <p class="weapon_p">
+                Polearm Plunging Attacks are considered Blunt Attacks. All Polearm users have similar animations when
+                plunging, which
+                involves them spinning downward like a drill.
+            </p>
+        </span>
+
+        <span id="Sword" class="tab-content" style="display:none">
+            <h3 class="weaponh3">Sword</h3>
+            <p class="weapon_p1">
+                Sword attacks are the middle ground of melee weapons. The damage and speed of their attacks are
+                comparable to those
+                of Polearms, though with a shorter reach.
+            </p>
+            <h5 class="weaponh5">
+                Normal Attacks
+            </h5>
+            <p class="weapon_p">
+                A Sword user's Normal Attack chain typically consists of 3-5 fast melee attacks with relatively short
+                reach.
+            </p>
+            <h5 class="weaponh5">
+                Charged Attacks
+            </h5>
+            <p class="weapon_p">
+                A Sword user's Charged Attack has a small windup before performing 2 fast, arcing attacks in front of
+                them with high
+                knockback and wide AoE. There are four notable exceptions to this pattern: Jean's upward thrust
+                (Favonius Bladework),
+                Ayaka's AoE scan attack (Kamisato Art: Kabuki), Ayato's forward lunge (Kamisato Art: Marobashi), and
+                Furina's AoE
+                attack that switches her Arkhe alignment (Soloist's Solicitation).
+
+                <br>Sword Charged Attacks can only be performed after a Normal Attack, and cannot be buffered after the
+                final Normal Attack in a combo. The only exception to this is Furina's Charged Attack.
+
+                <br>Most Sword users move forward during their Charged Attacks. However, exceptions are Keqing, Kaeya,
+                and
+                Albedo who move backward, as well as Ayaka, Nilou and Furina, who do not move or have very little
+                movement.
+
+                <br>Sword Charged Attacks typically cost 20 Stamina, with the only exception being Keqing's which costs
+                25
+                Stamina.
+            </p>
+            <h5 class="weaponh5">
+                Plunging Attacks
+            </h5>
+            <p class="weapon_p">
+                Sword Plunging Attacks are considered Blunt Attacks. All Sword users have similar animations when
+                plunging,
+                which involves them striking downward with their sword.
+            </p>
+        </span>
+
+        <span id="Bow" class="tab-content" style="display:none">
+            <h3 class="weaponh3">Bow</h3>
+            <p class="weapon_p1">
+                Bows boast long-ranged attacks, with Charged Attacks that are capable of hitting monsters as far as the
+                eye can see
+                with proper aim. A fully-Charged Attack deals elemental damage.
+            </p>
+            <h5 class="weaponh5">
+                Normal Attacks
+            </h5>
+            <p class="weapon_p">
+                A Bow user's Normal Attack chain consists of 4-6 quick mid-range attacks. The trajectory of Bow Normal
+                Attacks will be fixed once fired, and can miss if the target moves out of its path.
+            </p>
+            <h5 class="weaponh5">
+                Charged Attacks
+            </h5>
+            <p class="weapon_p">
+                By holding down the Normal Attack button or clicking the Aiming Mode button, bow users will enter Aiming
+                Mode, in which players can control where the characters aim. Aimed Shots fired in this mode have greater
+                range and increased damage, and will be considered Charged Attack DMG regardless of how long they have
+                been charged.
+
+                <br>While in Aiming Mode, the arrow will accumulate an elemental infusion and become fully charged in ~2
+                seconds (or 1 second for Ganyu). A Fully-Charged Aimed Shot will deal Elemental DMG.
+
+                <br>Hitting the enemy's weak spot with an Aimed Shot automatically guarantees a CRIT Hit, and will deal
+                greater poise damage and knockback. A sound will play upon landing one.
+            </p>
+            <h5 class="weaponh5">
+                Plunging Attacks
+            </h5>
+            <p class="weapon_p">
+                All Bow users have similar animations when plunging, which involves them striking downward foot-first
+                and unleashing a shower of arrows around them upon striking the ground.
+
+                <br>Bow Plunging Attacks are considered non-Blunt melee attacks. Therefore, they are able to deal a
+                limited
+                amount of damage to Geo objects such as Minerals.
+            </p>
+        </span>
+    </div>
+
+    <div class="elementTable">
+        <p>Click on the tabs to discover elemental reaction combinations of each element!</p>
+        <script>
+            function showCombinations(elementId) {
+                const combinations = document.querySelectorAll('.element-combinations');
+                combinations.forEach(comb => {
+                    comb.style.display = 'none';
+                });
+                document.getElementById(elementId).style.display = 'block';
+            }
+        </script>
+        <div class="elementTab">
+            <button class="elementTab" onclick="showCombinations('Pyro')">
+                <img src="Element_Pyro.webp" alt="Pyro">
+                Pyro
+            </button>
+            <button class="elementTab" onclick="showCombinations('Hydro')">
+                <img src="Element_Hydro.webp" alt="Hyro">
+                Hyro
+            </button>
+            <button class="elementTab" onclick="showCombinations('Electro')">
+                <img src="Element_Electro.webp" alt="Electro">
+                Electro
+            </button>
+            <button class="elementTab" onclick="showCombinations('Cryo')">
+                <img src="Element_Cryo.webp" alt="Cryo">
+                Cryo
+            </button>
+            <button class="elementTab" onclick="showCombinations('Dendro')">
+                <img src="Element_Dendro.webp" alt="Dendro">
+                Dendro
+            </button>
+            <button class="elementTab" onclick="showCombinations('Anemo')">
+                <img src="Element_Anemo.webp" alt="Anemo">
+                Anemo
+            </button><button class="elementTab" onclick="showCombinations('Geo')">
+                <img src="Element_Geo.webp" alt="Geo">
+                Geo
+            </button>
+        </div>
+        <div id="Pyro" class="element-combinations">
+            <h3>Pyro Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Vaporize</td>
+                        <td>1.5x</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Overloaded</td>
+                        <td>Explosion</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Cryo.webp" alt="Cryo"></td>
+                        <td class="elementtext">Melt</td>
+                        <td>2x</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Dendro.webp" alt="Dendro"></td>
+                        <td class="elementtext">Burning</td>
+                        <td>Damage over time</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Anemo.webp" alt="Anemo"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Pyro damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="Hydro" class="element-combinations">
+            <h3>Hydro Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Vaporize</td>
+                        <td>2x</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Electro-charged</td>
+                        <td>Electro damage over time</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Cryo.webp" alt="Cryo"></td>
+                        <td class="elementtext">Frozen</td>
+                        <td>Freezes enemies</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Dendro.webp" alt="Dendro"></td>
+                        <td class="elementtext">Bloom</td>
+                        <td>Creates seeds that explode</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Anemo.webp" alt="Anemo"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Hydro damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="Electro" class="element-combinations">
+            <h3>Electro Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Overloaded</td>
+                        <td>Explosion</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Electro-charged</td>
+                        <td>Electro damage over time</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Cryo.webp" alt="Cryo"></td>
+                        <td class="elementtext">Superconduct</td>
+                        <td>Reduces physical resistance</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Dendro.webp" alt="Dendro"></td>
+                        <td class="elementtext">Quicken</td>
+                        <td>Increases damage</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Anemo.webp" alt="Anemo"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Electro damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="Cryo" class="element-combinations">
+            <h3>Cryo Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Melt</td>
+                        <td>1.5x</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Frozen</td>
+                        <td>Freezes enemies</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Superconduct</td>
+                        <td>Reduces physical resistance</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Anemo.webp" alt="Anemo"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Cryo damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="Dendro" class="element-combinations">
+            <h3>Dendro Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Burning</td>
+                        <td>Damage over time</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Bloom</td>
+                        <td>Creates seeds that explode</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Quicken</td>
+                        <td>Increases damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="Anemo" class="element-combinations">
+            <h3>Anemo Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Pyro damage</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Hydro damage</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Electro damage</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Cryo.webp" alt="Cryo"></td>
+                        <td class="elementtext">Swirl</td>
+                        <td>AoE Cryo damage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Geo" class="element-combinations">
+            <h3>Geo Combinations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Reaction</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Element_Pyro.webp" alt="Pyro"></td>
+                        <td class="elementtext">Crystallize</td>
+                        <td>Generates a shield</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Hydro.webp" alt="Hydro"></td>
+                        <td class="elementtext">Crystallize</td>
+                        <td>Generates a shield</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Electro.webp" alt="Electro"></td>
+                        <td class="elementtext">Crystallize</td>
+                        <td>Generates a shield</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Element_Cryo.webp" alt="Cryo"></td>
+                        <td class="elementtext">Crystallize</td>
+                        <td>Generates a shield</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div class="combat_elementreaction">
+
+        <h2 class="elementreactionh2">Element reaction</h2>
+        <p class="elementreaction_introduction">Elemental Reaction damage can be increased by the Elemental Mastery of the character causing the reaction. The in-game 
+            interface shows the damage bonus provided by the character's current elemental mastery. This bonus will be applied in 
+            different ways, depending on the type of reaction.
+        </p>
+        <p class="elementreaction_introduction_guide">
+            Click on the buttons in the table below to learn about the result of the different elemental reactions
+        </p>
+        
+        <table class="elementtable">
+            <tr>
+                Element reaction
+            </tr>
+            <tr>
+                <td></td>
+                <td class="elementtexttd">Pyro</td>
+                <td class="elementtexttd">Hydro</td>
+                <td class="elementtexttd">Electro</td>
+                <td class="elementtexttd">Cryo</td>
+                <td class="elementtexttd">Dendro</td>
+                <td class="elementtexttd">Anemo</td>
+                <td class="elementtexttd">Geo</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="Element_Pyro.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Hydro.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Electro.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Cryo.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Dendro.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Anemo.webp" class="elementimgtd" width="45px"></td>
+                <td><img src="Element_Geo.webp" class="elementimgtd" width="45px"></td>
+            </tr>
+
+            <tr>
+                <td><img src="Element_Pyro.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image1" src="purple.png" class="hiddenimage" onclick="toggleContent('image1','text1')">
+                        <p id="text1" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image2" src="purple.png" class="hiddenimage" onclick="toggleContent('image2','text2')">
+                        <p id="text2" class="text-content hidden">Vaporize <br>(1.5x)</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image3" src="purple.png" class="hiddenimage" onclick="toggleContent('image3','text3')">
+                        <p id="text3" class="text-content hidden">Overloaded </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image4" src="purple.png" class="hiddenimage" onclick="toggleContent('image4','text4')">
+                        <p id="text4" class="text-content hidden">Melt <br>(2x)</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image5" src="purple.png" class="hiddenimage" onclick="toggleContent('image5','text5')">
+                        <p id="text5" class="text-content hidden">Burning</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image6" src="purple.png" class="hiddenimage" onclick="toggleContent('image6','text6')">
+                        <p id="text6" class="text-content hidden">Swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image7" src="purple.png" class="hiddenimage" onclick="toggleContent('image7','text7')">
+                        <p id="text7" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="Element_Hydro.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image8" src="purple.png" class="hiddenimage" onclick="toggleContent('image8','text8')">
+                        <p id="text8" class="text-content hidden">Vaporize <br>(2x)</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image9" src="purple.png" class="hiddenimage" onclick="toggleContent('image9','text9')">
+                        <p id="text9" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image10" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image10','text10')">
+                        <p id="text10" class="text-content hidden">Electro-<br>charged</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image11" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image11','text11')">
+                        <p id="text11" class="text-content hidden">Frozen
+                            <br><img src="Element_Geo.webp" width="20px"><img src="Icon_Attribute_Physical.webp">shatter
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image12" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image12','text12')">
+                        <p id="text12" class="text-content hidden">Bloom
+                            <br><img src="Element_Pyro.webp" width="20px">Burgeon
+                            <br><img src="Element_Electro.webp" width="20px">Hyper-bloom
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image13" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image13','text13')">
+                        <p id="text13" class="text-content hidden">Swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image14" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image14','text14')">
+                        <p id="text14" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="Element_Electro.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image15" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image15','text15')">
+                        <p id="text15" class="text-content hidden">Overloaded</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image16" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image16','text16')">
+                        <p id="text16" class="text-content hidden">Electro-<br>Charged</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image17" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image17','text17')">
+                        <p id="text17" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image18" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image18','text18')">
+                        <p id="text18" class="text-content hidden">Super-<br>conduct</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image19" src="purple.png" class="hiddenimage"
+                            onclick="toggleContent('image19','text19')">
+                        <p id="text19" class="text-content hidden">Quicken
+                            <br><img src="Element_Dendro.webp" width="20px">Spread
+                            <br><img src="Element_Electro.webp" width="20px">Aggravate
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image20" src="purple.png" class="hiddenimage"
+                        onclick="toggleContent('image20','text20')">
+                    <p id="text20" class="text-content hidden">Swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image21" src="purple.png" class="hiddenimage" onclick="toggleContent('image21','text21')">
+                    <p id="text21" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="Element_Cryo.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image22" src="purple.png" class="hiddenimage" onclick="toggleContent('image22','text22')">
+                        <p id="text22" class="text-content hidden">Melt<br>(1.5x)</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image23" src="purple.png" class="hiddenimage" onclick="toggleContent('image23','text23')">
+                        <p id="text23" class="text-content hidden">Frozen
+                            <br><img src="Element_Geo.webp" width=20px><img src="Icon_Attribute_Physical.webp">Shatter
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image24" src="purple.png" class="hiddenimage" onclick="toggleContent('image24','text24')">
+                        <p id="text24" class="text-content hidden">Super-<br>conduct</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image25" src="purple.png" class="hiddenimage" onclick="toggleContent('image25','text25')">
+                        <p id="text25" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image26" src="purple.png" class="hiddenimage" onclick="toggleContent('image26','text26')">
+                        <p id="text26" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image27" src="purple.png" class="hiddenimage" onclick="toggleContent('image27','text27')">
+                        <p id="text27" class="text-content hidden">Swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image28" src="purple.png" class="hiddenimage" onclick="toggleContent('image28','text28')">
+                        <p id="text28" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Element_Dendro.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image29" src="purple.png" class="hiddenimage" onclick="toggleContent('image29','text29')">
+                        <p id="text29" class="text-content hidden">Burning</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image30" src="purple.png" class="hiddenimage" onclick="toggleContent('image30','text30')">
+                        <p id="text30" class="text-content hidden">Bloom
+                            <br><img src="Element_Geo.webp" width="20px">Burgron
+                            <br><img src="Element_Electro.webp" width="20px">Hyper-bloom
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image31" src="purple.png" class="hiddenimage"
+                        onclick="toggleContent('image31','text31')">
+                    <p id="text31" class="text-content hidden">Quicken
+                        <br><img src="Element_Dendro.webp" width="20px">Spread
+                        <br><img src="Element_Electro.webp" width="20px">Aggravate
+                    </p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image32" src="purple.png" class="hiddenimage" onclick="toggleContent('image32','text32')">
+                        <p id="text32" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image33" src="purple.png" class="hiddenimage" onclick="toggleContent('image33','text33')">
+                        <p id="text33" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image34" src="purple.png" class="hiddenimage" onclick="toggleContent('image34','text34')">
+                        <p id="text34" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image35" src="purple.png" class="hiddenimage" onclick="toggleContent('image35','text35')">
+                        <p id="text35" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Element_Anemo.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image36" src="purple.png" class="hiddenimage" onclick="toggleContent('image36','text36')">
+                        <p id="text36" class="text-content hidden">swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image37" src="purple.png" class="hiddenimage" onclick="toggleContent('image37','text37')">
+                        <p id="text37" class="text-content hidden">swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image38" src="purple.png" class="hiddenimage" onclick="toggleContent('image38','text38')">
+                        <p id="text38" class="text-content hidden">swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image39" src="purple.png" class="hiddenimage" onclick="toggleContent('image39','text39')">
+                        <p id="text39" class="text-content hidden">swirl</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image40" src="purple.png" class="hiddenimage" onclick="toggleContent('image40','text40')">
+                        <p id="text40" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image41" src="purple.png" class="hiddenimage" onclick="toggleContent('image41','text41')">
+                        <p id="text41" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image42" src="purple.png" class="hiddenimage" onclick="toggleContent('image42','text42')">
+                        <p id="text42" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Element_Geo.webp" class="elementimgtr" width="45px"></td>
+                <td>
+                    <span>
+                        <img id="image43" src="purple.png" class="hiddenimage" onclick="toggleContent('image43','text43')">
+                        <p id="text43" class="text-content hidden">Crystallize</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image44" src="purple.png" class="hiddenimage" onclick="toggleContent('image44','text44')">
+                        <p id="text44" class="text-content hidden">Crystallize</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image45" src="purple.png" class="hiddenimage" onclick="toggleContent('image45','text45')">
+                        <p id="text45" class="text-content hidden">Crystallize</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image46" src="purple.png" class="hiddenimage" onclick="toggleContent('image46','text46')">
+                        <p id="text46" class="text-content hidden">Crystallize</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image47" src="purple.png" class="hiddenimage" onclick="toggleContent('image47','text47')">
+                        <p id="text47" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image48" src="purple.png" class="hiddenimage" onclick="toggleContent('image48','text48')">
+                        <p id="text48" class="text-content hidden">---</p>
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        <img id="image49" src="purple.png" class="hiddenimage" onclick="toggleContent('image49','text49')">
+                        <p id="text49" class="text-content hidden">---</p>
+                    </span>
+                </td>
+            </tr>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+
+    <script src="ashely.js"></script>
+
+    <footer>
+        <a href="Combat.html">Back to top</a>
+    </footer>
+</body>
+</html>
